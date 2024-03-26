@@ -1,4 +1,4 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import React from 'react';
 
 const Circle = () => {
@@ -6,7 +6,9 @@ const Circle = () => {
     <View style={styles.container}>
       <View style={styles.circle2}>
         <View style={styles.circle1}>
-          <Text style={styles.text}>{'Add\nPhoto'}</Text>
+          <TouchableOpacity>
+            <Text style={styles.addphoto}>{'Add\nPhoto'}</Text>
+          </TouchableOpacity>
         </View>
       </View>
     </View>
@@ -21,11 +23,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  text: {
+  addphoto: {
     fontSize: 14,
     fontFamily: 'Poppins',
     fontWeight: 'bold',
     flexDirection: 'row',
+    textAlign: 'center',
   },
   circle1: {
     width: 90,
@@ -41,7 +44,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     border: 1,
-    borderWidth: 3.5,
+    borderWidth: 2.5,
     borderStyle: 'dashed',
     borderRadius: 180,
     borderColor: '#8D92A3',
