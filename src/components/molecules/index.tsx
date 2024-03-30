@@ -1,5 +1,5 @@
 import PageHeader from './PageHeader';
 import TextInput from './TextInput';
-import Card from './Card';
+import Transactions from './TransactionCard';
 
-export {PageHeader, TextInput, Card};
+export {PageHeader, TextInput, Transactions};

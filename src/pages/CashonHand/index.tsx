@@ -1,4 +1,4 @@
-import {ScrollView, StyleSheet, Text, View} from 'react-native';
+import {ScrollView, StyleSheet, View} from 'react-native';
 import React from 'react';
 import {PageHeader, Gap, TextInput, Button} from '../../components';
 
@@ -23,9 +23,6 @@ const CashonHand = ({navigation}) => {
         </View>
       </View>
       <Gap height={24} />
-      <View style={styles.contentWrapper}>
-        <Text style={styles.text}>Last 3 Transactions</Text>
-      </View>
     </ScrollView>
   );
 };

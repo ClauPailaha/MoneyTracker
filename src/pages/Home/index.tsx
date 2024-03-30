@@ -4,42 +4,40 @@ import {Button, PageHeader, Gap} from '../../components';
 
 const Home = ({navigation}) => {
   return (
-    <View>
-      <ScrollView style={styles.container}>
-        <PageHeader type="withPhoto" />
-        <Gap height={20} />
-        <View style={styles.contentWrapper}>
-          <Text style={styles.subtext}>Your Balance</Text>
-          <Text style={styles.maintext}>Rp. 10.000.000</Text>
-          <View style={styles.linewrapper}>
-            <View style={styles.line} />
-          </View>
-          <Text style={styles.subtext}>Cash on Hand Rp. 4.000.000</Text>
-          <Text style={styles.subtext2}>Cash on Bank Rp. 6.000.000</Text>
+    <ScrollView style={styles.container}>
+      <PageHeader type="withPhoto" />
+      <Gap height={20} />
+      <View style={styles.contentWrapper}>
+        <Text style={styles.subtext}>Your Balance</Text>
+        <Text style={styles.maintext}>Rp. 10.000.000</Text>
+        <View style={styles.linewrapper}>
+          <View style={styles.line} />
         </View>
-        <Gap height={20} />
-        <View style={styles.contentWrapper}>
-          <Text style={styles.subtext}>Add Transaction</Text>
-          <View>
-            <Button
-              label="Cash on Hand"
-              onPress={() => navigation.navigate('CashonHand')}
-            />
-          </View>
-          <View style={styles.buttongap}>
-            <Button
-              label="Cash on Bank"
-              onPress={() => navigation.navigate('CashonBank')}
-            />
-          </View>
+        <Text style={styles.subtext}>Cash on Hand Rp. 4.000.000</Text>
+        <Text style={styles.subtext2}>Cash on Bank Rp. 6.000.000</Text>
+      </View>
+      <Gap height={20} />
+      <View style={styles.contentWrapper}>
+        <Text style={styles.subtext}>Add Transaction</Text>
+        <View>
+          <Button
+            label="Cash on Hand"
+            onPress={() => navigation.navigate('CashonHand')}
+          />
         </View>
-        <Gap height={25} />
-        <View style={styles.contentWrapper} />
-      </ScrollView>
-    </View>
+        <View style={styles.buttongap}>
+          <Button
+            label="Cash on Bank"
+            onPress={() => navigation.navigate('CashonBank')}
+          />
+        </View>
+      </View>
+      <Gap height={25} />
+      <View style={styles.contentWrapper} />
+    </ScrollView>
   );
 };
-
+//test//
 export default Home;
 
 const styles = StyleSheet.create({

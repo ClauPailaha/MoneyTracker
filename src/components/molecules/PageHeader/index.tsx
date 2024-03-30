@@ -1,7 +1,7 @@
 import {StyleSheet, Text, View, Image} from 'react-native';
 import React from 'react';
 import {Button} from '../../atoms';
-import {DummyPhoto} from '../../../assets/images';
+import {DummyPhoto} from '../../../assets/image';
 
 const PageHeader = ({label, backButton, onPress, type}) => {
   if (type === 'withPhoto') {
